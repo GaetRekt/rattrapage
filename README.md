@@ -1,60 +1,22 @@
-# Ynov - B2 - Symfony - DS 1
-
-Vous allez réaliser un site simple présentant des produits.
-
-## Règles imposées
-
-- Utiliser la version 4.4 de Symfony
-- Utiliser une librairie CSS type Bootstrap, UIKit, etc...
-- Réaliser une application responsive
-
-## Objectifs
-
-- Identifier les dépendances requises
-- Créer une entité
-- Afficher une date avec un filtre Twig
-- Afficher un nombre flottant avec Twig
-- Séparer ses templates Twig, identifier l'arborescence de templates nécessaire
-- Manipuler le QueryBuilder
-- Tirer partie du repository pour adapter la requête voulue
-
-## Structure d'un produit
-
-|Champ|Type|Commentaire|
-|---|---|---|
-|id|int||
-|name|string||
-|description|text||
-|image|string|L'illustration du produit|
-|promo|boolean||
-|display|boolean|_Afficher le produit ou non_|
-|priceHT|float||
-|created|date|_Date de création du produit_|
-
-Vous organiserez vos fixtures pour avoir des données aléatoires et en nombre raisonnable (une vingtaine de produits au moins).
-
-## Pages demandées
-
-### Page d'accueil
-
-La page d'accueil présentera les 10 derniers produits visibles (display : true), ordonnés par date décroissante
-
-![Page d'accueil](docs/home.png "Page d'accueil")
-
-### Page tous les produits
-
-La page tous les produits aura la même apparence que la page d'accueil, sans la bannière d'accueil, et présentera tous les produits visibles, sans ordre particulier
-
-![Tous les produits](docs/all.png "Tous les produits")
-
-### Page promos
-
-La page "Promos" présentera tous les produits en promotion
-
-![Promos](docs/promos.png "Promos")
-
-### Page produit
-
-Une page de produit présentera les détails d'un produit
-
-![product](docs/product.png "product")
+Qu'est-ce qu'un container de services ? Quel est son rôle ? 
+Un Container de Services est un objet PHP qui gère l'exécution des services 
+Quelle est la différence entre les commandes make:entity et make:user lorsqu'on utilise la console Symfony ? 
+make:entity crée un entité classique ou le developpeur ajoutera un élément tandis que make:user créera une entité user avec les
+éléments necessaire a tout les users ainsi que l'encodage des mots de passe 
+Quelle commande utiliser pour charger les fixtures dans la base de données ? 
+php bin/console doctrine:fixtures:load 
+Résumez de manière simple le fonctionnement du système de versions “Semver” 
+Numérote les versions 
+Qu'est-ce qu'un Repository ? A quoi sert-il ? 
+Un repository centralise tout ce qui touche à la récupération de nos entités , communique avec la BDD 
+Quelle commande utiliser pour voir la liste des routes ? 
+php bin/console debug:router 
+Dans un template Twig, quelle variable globale permet d'accéder à la requête courante, l'utilisateur courant, etc...? 
+app  Pour mettre à jour la structure de la base de données, quelles sont les 2 possibilités que nous avons abordées en cours ? 
+migrations mise a jour a la volée 
+Quelle commande permet de créer une classe de contrôleur ? 
+php bin/console make:controller 
+Décrivez succintement l'outil Flex de Symfony 
+Symfony Flex permet d'installer et de gérer les applications Symfony. 
+Symfony Flex automatise les tâches les plus courantes des applications Symfony, comme l'installation et la suppression des bundles et
+autres dépendances de Composer
